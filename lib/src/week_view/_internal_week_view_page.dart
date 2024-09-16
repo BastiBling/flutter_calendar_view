@@ -275,10 +275,6 @@ class _InternalWeekViewPageState<T extends Object?>
               ],
             ),
           ),
-          Divider(
-            thickness: 1,
-            height: 1,
-          ),
           SizedBox(
             width: widget.width,
             child: Container(
@@ -286,7 +282,7 @@ class _InternalWeekViewPageState<T extends Object?>
                 border: Border(
                   bottom: BorderSide(
                     color: widget.hourIndicatorSettings.color,
-                    width: 2,
+                    width: 1,
                   ),
                 ),
               ),
@@ -299,7 +295,6 @@ class _InternalWeekViewPageState<T extends Object?>
                     child: widget.fullDayHeaderTitle.isNotEmpty
                         ? Padding(
                             padding: const EdgeInsets.symmetric(
-                              vertical: 2,
                               horizontal: 1,
                             ),
                             child: Text(
